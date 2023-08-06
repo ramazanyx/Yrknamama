@@ -113,7 +113,7 @@ if(XASH_64BIT)
 else()
 	message(STATUS "Building for 32 Bit")
 endif()
-
+cmake -DXASH_64BIT=1 ..
 
 # Dependencies
 if(XASH_STATIC)
